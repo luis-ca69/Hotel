@@ -5,6 +5,7 @@
 
 package com.mycompany.hotel;
 import javax.swing.JOptionPane;
+import javax.swing.JFrame;
 /**
  *
  * @Anderson Sanabria Hdez
@@ -29,14 +30,16 @@ public class Hotel {
             String tamañoHabitación = JOptionPane.showInputDialog(null,"Escriba el tamaño de la habitacion que desea reservar");
             int cantidadDias = Integer.parseInt(JOptionPane.showInputDialog(null,"Escriba la cantidad de días hospetados"));
             elcliente[i].setLashabitaciones(new Habitaciones(cantidadDias, tamañoHabitación));
-        
+
         }
-         for (int i=0;i<elcliente.length;i++){
-           JOptionPane.showMessageDialog(null,"La reservación "+ (i+1) + " está a nombre de: "+elcliente[i].getCliente()+" "+elcliente[i].getApellidos());
-           JOptionPane.showMessageDialog(null,"La reservación se hizo para el: "+ elcliente[i].Lareservacion.getDia()+"/"+elcliente[i].Lareservacion.getMes()+"/"+elcliente[i].Lareservacion.getAño());
-           JOptionPane.showMessageDialog(null,"Usted ha escogido la habitación "+ elcliente[i].Lashabitaciones.getTamaño_habitacion());
-           JOptionPane.showMessageDialog(null,"El total a pagar es de: " + elcliente[i].getLashabitaciones().pago(elcliente[i].getLashabitaciones().getTamaño_habitacion(),elcliente[i].getLashabitaciones().getCantidadDe_dias()));
+        for (int i=0;i<elcliente.length;i++){
+            JOptionPane.showMessageDialog(null,"La reservación "+ (i+1) + " está a nombre de: "+elcliente[i].getCliente()+" "+elcliente[i].getApellidos());
+            JOptionPane.showMessageDialog(null,"La reservación se hizo para el: "+ elcliente[i].Lareservacion.getDia()+"/"+elcliente[i].Lareservacion.getMes()+"/"+elcliente[i].Lareservacion.getAño());
+            JOptionPane.showMessageDialog(null,"Usted ha escogido la habitación "+ elcliente[i].Lashabitaciones.getTamaño_habitacion());
+            JOptionPane.showMessageDialog(null,"El total a pagar es de: " + elcliente[i].getLashabitaciones().pago(elcliente[i].getLashabitaciones().getTamaño_habitacion(),elcliente[i].getLashabitaciones().getCantidadDe_dias()));
         }//Aquí se imprimen los datos
+
+
          
     }
 }

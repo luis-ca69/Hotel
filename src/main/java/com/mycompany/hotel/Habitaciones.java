@@ -61,6 +61,5 @@ public class Habitaciones {
         break;
     }
     return total;
-    
   }
-}  
+}

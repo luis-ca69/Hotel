@@ -10,7 +10,6 @@ package com.mycompany.hotel;
  */
 //Se crean los atributos y se invocan las clases anteriores
 public class Cliente {
-    
     private String cliente;
     private String apellidos;
     public reservacion Lareservacion;
