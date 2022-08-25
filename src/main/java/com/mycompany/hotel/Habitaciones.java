@@ -21,7 +21,7 @@ public class Habitaciones {
 
 
   public int getCantidadDe_dias() {
-      System.out.println("HHH");
+      System.out.println("h");
     return CantidadDe_dias;
   }
 
